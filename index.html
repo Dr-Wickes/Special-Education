@@ -193,6 +193,20 @@
       border: 1px solid rgba(255, 255, 255, 0.4);
     }
 
+    .btn-mini {
+      border-radius: 999px;
+      border: 1px solid var(--border-soft);
+      background: #f5f7ff;
+      padding: 0.25rem 0.6rem;
+      font-size: 0.78rem;
+      cursor: pointer;
+      margin: 0.15rem 0.25rem 0.15rem 0;
+    }
+
+    .btn-mini:hover {
+      background: var(--primary-light);
+    }
+
     .hero-badge {
       position: absolute;
       right: 18px;
@@ -357,6 +371,20 @@
       text-decoration: underline;
     }
 
+    .organizer {
+      border-radius: 10px;
+      border: 1px dashed var(--border-soft);
+      padding: 0.7rem 0.8rem;
+      margin-top: 0.4rem;
+      background: #f9faff;
+      font-size: 0.82rem;
+    }
+
+    .organizer strong {
+      display: inline-block;
+      min-width: 80px;
+    }
+
     footer {
       max-width: 1100px;
       margin: 0 auto;
@@ -380,8 +408,9 @@
       <a href="#start">Getting Started</a>
       <a href="#iep">IEPs &amp; 504s</a>
       <a href="#months">Month-by-Month</a>
+      <a href="#accommodations">Accommodations</a>
+      <a href="#plop">PLOP &amp; Transition</a>
       <a href="#assessment">Assessment</a>
-      <a href="#resources">Resources</a>
     </div>
   </nav>
 </header>
@@ -397,12 +426,12 @@
       <h1>Everything you need for a successful first year in Special Education.</h1>
       <p>
         From decoding IEPs and 504s to progress monitoring, transition planning,
-        and family communication, this guide walks you month-by-month through
-        the work of a special educator.
+        accommodations, and family communication, this guide walks you
+        month-by-month through the work of a special educator.
       </p>
       <div class="hero-actions">
         <a class="btn btn-primary" href="#months">View month-by-month plan →</a>
-        <a class="btn btn-ghost" href="#resources">Download templates</a>
+        <a class="btn btn-ghost" href="#accommodations">Explore accommodations</a>
       </div>
       <div class="hero-badge">
         Built by a practicing SPED teacher &amp; admin intern
@@ -474,19 +503,18 @@
 
       <div class="accordion">
         <button type="button">
-          Chapter 408 / Staff Acknowledgement
+          Chapter 408 / Staff acknowledgment
           <span>+</span>
         </button>
         <div class="accordion-content">
           <div class="accordion-content-inner">
             <p>
-              In New York, teachers and service providers who work with a student
-              with an IEP are required to receive and acknowledge access to the
-              plan. Practically, that means:
+              Teachers and service providers who work with a student with an IEP
+              are expected to receive and acknowledge access to the plan. Practically, that means:
             </p>
             <ul>
               <li>Reading each student’s current IEP.</li>
-              <li>Signing any required acknowledgement forms.</li>
+              <li>Signing any required acknowledgment forms.</li>
               <li>Checking back after annual reviews or amendments.</li>
             </ul>
           </div>
@@ -523,7 +551,7 @@
       <ul>
         <li>Verify consent to test for students due for reevaluations.</li>
         <li>Administer Level 1 transition assessments by grade band.</li>
-        <li>Identify students who need WIAT-IV or other formal testing.</li>
+        <li>Identify students who may need WIAT-IV or other formal testing.</li>
         <li>Apply for College Board/ACT testing accommodations for eligible students.</li>
       </ul>
 
@@ -539,6 +567,130 @@
         <li>Draft projections and program recommendations for the coming year.</li>
         <li>Confirm course selections align with diploma options and graduation requirements.</li>
         <li>Complete exit summaries for seniors and students aging out.</li>
+      </ul>
+    </section>
+
+    <!-- Accommodations Explorer -->
+    <section id="accommodations" class="card">
+      <div class="pill">Tools · Accommodations explorer</div>
+      <h2>Explore common testing & classroom accommodations</h2>
+      <p>
+        Use these examples to clarify what accommodations really look like in practice.
+        This is not a menu to “give everything,” but a way to match supports to
+        documented needs and the student’s Present Levels of Performance (PLOP).
+      </p>
+
+      <h3>Extended time</h3>
+      <p class="small">
+        Click an option to see a quick description you can use in your notes or when
+        explaining the accommodation to staff and families.
+      </p>
+      <div>
+        <button class="btn-mini" data-explanation-target="ext-time" data-explanation="Student receives up to 1.5× the standard testing time (for example, 60-minute test → up to 90 minutes). Extended time is used to offset slow processing or reading fluency needs, not to add extra work.">1.5× time</button>
+        <button class="btn-mini" data-explanation-target="ext-time" data-explanation="Student receives up to 2.0× the standard testing time (for example, 60-minute test → up to 120 minutes). Typically reserved for significant reading, writing, or processing deficits documented in the PLOP/evaluations.">2.0× time</button>
+        <button class="btn-mini" data-explanation-target="ext-time" data-explanation="Student may use class period plus additional time (e.g., resource room or testing center) to complete tests, with supervision, without penalty for going beyond the typical bell schedule.">Flexible / multiple sessions</button>
+      </div>
+      <div class="organizer" id="ext-time-explanation">
+        <strong>How to use:</strong> Select an option above to generate language you can adapt.
+      </div>
+
+      <h3>Separate location</h3>
+      <ul>
+        <li>Small group (e.g., 3–5 students) in a distraction-reduced room.</li>
+        <li>Testing center or resource room with minimal visual/auditory distractions.</li>
+        <li>Individual testing when anxiety, behavior, or sensory needs significantly interfere in group settings.</li>
+      </ul>
+      <p class="small">
+        Document the <em>why</em>: attention, anxiety, behavior, sensory needs, or need for read-aloud/other supports
+        that are disruptive in the general testing room.
+      </p>
+
+      <h3>Instructional & classroom accommodations</h3>
+      <ul>
+        <li><strong>Presentation:</strong> Read-aloud, enlarged print, audio text, graphic organizers, notes provided.</li>
+        <li><strong>Response:</strong> Dictation to scribe, speech-to-text, answers recorded in test booklet, word banks.</li>
+        <li><strong>Scheduling:</strong> Tests broken into chunks, testing at preferred time of day, frequent breaks.</li>
+        <li><strong>Setting:</strong> Preferential seating, movement breaks, access to sensory tools.</li>
+        <li><strong>Organization/EF:</strong> Checklists, chunked directions, preview of key vocabulary, visual schedules.</li>
+      </ul>
+
+      <h3>Quick accommodation tracker (example)</h3>
+      <div class="organizer">
+        <p><strong>Student:</strong> ____________________   <strong>Class:</strong> ____________________</p>
+        <p><strong>Key accommodations:</strong></p>
+        <ul>
+          <li>Extended time: □ 1.5×  □ 2×  □ Flexible sessions</li>
+          <li>Setting: □ Small group  □ Individual  □ Preferential seating</li>
+          <li>Presentation: □ Read-aloud  □ Notes provided  □ Graphic organizers</li>
+          <li>Response: □ Scribe  □ Speech-to-text  □ Alternate response format</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- PLOP & Transition -->
+    <section id="plop" class="card">
+      <div class="pill">Tools · PLOP & Indicators 13 / 14</div>
+      <h2>Writing Present Levels & aligning to transition (Indicators 13 & 14)</h2>
+      <p>
+        Present Levels of Performance (PLOP) should read like a narrative snapshot:
+        what the student can do, where they struggle, and how their disability
+        impacts progress in the general curriculum. That narrative then connects
+        directly to goals, services, and transition planning.
+      </p>
+
+      <h3>PLOP organizer</h3>
+      <div class="organizer">
+        <p><strong>Area:</strong> (Reading / Writing / Math / Behavior / Executive Function / Social-Emotional)</p>
+        <p><strong>Strengths:</strong> _________________________________</p>
+        <p><strong>Needs:</strong> _____________________________________</p>
+        <p><strong>Impact of disability:</strong> How does this show up in classwork, homework, tests, and behavior?</p>
+        <p><strong>Data:</strong> Benchmark scores, classroom assessments, CBMs, WIAT, observations, etc.</p>
+        <p><strong>Student voice:</strong> How does the student describe their strengths, challenges, and goals?</p>
+        <p><strong>Family input:</strong> Priorities, concerns, strategies that help at home.</p>
+      </div>
+
+      <h3>Example PLOP paragraph (reading)</h3>
+      <p class="small">
+        <em>
+        Jordan is a tenth-grade student who demonstrates strong listening
+        comprehension and can discuss grade-level texts when they are read aloud
+        or summarized by peers. On silent reading tasks, Jordan reads accurately
+        at approximately a late 6th-grade level but at a significantly slower rate
+        than peers (90 wpm vs. 160+ wpm on grade-level passages). This reduced fluency
+        impacts his ability to complete independent reading and to finish tests on time.
+        Jordan reports that he often “loses his place” and feels rushed during timed
+        assessments. Without supports, he frequently leaves extended-response questions
+        unfinished, which lowers his test and quiz grades in English and Social Studies.
+        </em>
+      </p>
+
+      <h3>Indicator 13 · Secondary transition checklist (high school)</h3>
+      <p class="small">
+        Use this as a quick self-check when you are drafting or reviewing transition IEPs.
+      </p>
+      <ul>
+        <li>Student has at least one <strong>measurable postsecondary goal</strong> for education/training.</li>
+        <li>Student has at least one <strong>measurable postsecondary goal</strong> for employment.</li>
+        <li>As appropriate, there is a goal related to <strong>independent living</strong> (community participation, daily living, etc.).</li>
+        <li>Postsecondary goals are based on <strong>age-appropriate transition assessments</strong> (Level 1s, interest inventories, aptitude measures).</li>
+        <li>There is a clear connection between PLOP → goals → services and courses of study.</li>
+        <li>Annual IEP goals reasonably move the student toward each postsecondary goal.</li>
+        <li>Student and family have been invited to the meeting where transition is discussed.</li>
+        <li>Outside agencies (when appropriate) are invited with parent consent.</li>
+      </ul>
+
+      <h3>Indicator 14 · Post-school outcomes (what to keep in mind)</h3>
+      <p class="small">
+        Indicator 14 tracks what students with IEPs are doing one year after leaving
+        high school (enrolled in higher education, other training, employed, etc.).
+        While you may not collect the data yourself, your IEP work should make it
+        more likely that students:
+      </p>
+      <ul>
+        <li>Leave with a clear, realistic plan for education, training, and/or work.</li>
+        <li>Have practiced self-advocacy (can explain their disability and needed accommodations).</li>
+        <li>Understand how to request accommodations in college, vocational programs, or the workplace.</li>
+        <li>Have been connected to adult agencies (ACCES-VR, OPWDD, etc., as appropriate).</li>
       </ul>
     </section>
 
@@ -589,16 +741,17 @@
     </section>
 
     <section id="resources" class="card">
-      <h2>Downloads & templates</h2>
+      <h2>Resources & organizers</h2>
       <p class="small">
-        Replace these placeholder links with your Google Docs / PDFs:
+        These links jump to tools built into this site so nothing breaks, even if you
+        share just the URL.
       </p>
       <div class="link-list">
-        <a href="#TODO">Parent contact log template</a>
-        <a href="#TODO">Teacher report form</a>
-        <a href="#TODO">Accommodation quick-reference sheet</a>
-        <a href="#TODO">Level 1 transition surveys</a>
-        <a href="#TODO">Exit summary template</a>
+        <a href="#accommodations">Accommodations explorer</a>
+        <a href="#plop">PLOP & transition organizer</a>
+        <a href="#assessment">Assessment & progress monitoring ideas</a>
+        <a href="#months">Month-by-month action plan</a>
+        <a href="#iep">IEP vs 504 & Chapter 408</a>
       </div>
     </section>
 
@@ -614,15 +767,15 @@
         <span class="badge">SSD / College Board</span>
       </div>
       <p class="small" style="margin-top: 0.6rem;">
-        Add a “Glossary” page if you’d like a full list of terms and definitions for
-        new staff.
+        Consider adding a full “Glossary” page later if you want definitions for
+        every term new staff might see.
       </p>
     </section>
 
     <section class="card">
       <h2>Local implementation notes</h2>
       <p class="small">
-        Here you can list district-specific contacts and links (Frontline, Q-Global,
+        Use this card to list district-specific contacts and links (Frontline, Q-Global,
         internal intranet, etc.), so the core guide works anywhere, but your home
         district has everything in one place.
       </p>
@@ -643,6 +796,18 @@
       acc.classList.toggle("open");
       var symbol = btn.querySelector("span");
       symbol.textContent = acc.classList.contains("open") ? "–" : "+";
+    });
+  });
+
+  // Extended time explanation buttons
+  document.querySelectorAll("[data-explanation-target]").forEach(function (btn) {
+    btn.addEventListener("click", function () {
+      var targetId = btn.getAttribute("data-explanation-target") + "-explanation";
+      var explanation = btn.getAttribute("data-explanation");
+      var box = document.getElementById(targetId);
+      if (box) {
+        box.textContent = explanation;
+      }
     });
   });
 
